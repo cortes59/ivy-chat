@@ -1,0 +1,122 @@
+.chatWidget {
+  width: 380px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 20px 50px #00000027;
+  border-radius: 9px;
+  opacity: 1;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.widgetHeader {
+  height: 75px;
+  background: #2b6bd1 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 4px #28304214;
+  border-radius: 9px 9px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.widgetHeaderMenu {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.widgetHeaderMenu img {
+  width: 20px;
+  margin-right: 10px;
+}
+.widgetCloseIcon {
+    width: 20px;
+}
+
+.widgetContent {
+  position: relative;
+  padding: 5px;
+  height: calc(100% - 75px);
+}
+
+.messagesContainer {
+  padding: 20px;
+  height: 30vh;
+  min-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.avatarImage {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.answerContainer,
+.questionContainer {
+  display: flex;
+  align-items: center;
+}
+
+.questionContainer {
+  justify-content: flex-end;
+}
+
+.answerContainer p,
+.questionContainer p {
+  border-radius: 9px 9px 9px 2px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.answerContainer p {
+  background: #eaeff8 0% 0% no-repeat padding-box;
+}
+
+.questionContainer p {
+  background: #1e6deb 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+.widgetInputContainer {
+  /* position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px; */
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 63px;
+}
+
+.widgetInputContainer textarea {
+  width: 100%;
+  height: calc(100% - 40px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 30%;
+  font-size: 14px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #5b7edd;
+  border-radius: 5px;
+}
+
+.widgetActions {
+    position: absolute;
+    right: 20px;
+    
+}
+.widgetActions img {
+    margin-left: 10px;
+    width: 25px;
+}
+.widgetActions button {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
